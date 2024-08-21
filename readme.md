@@ -1,8 +1,10 @@
-OOPS PRINCIPLES:
+OO PRINCIPLES:
+* Encapsulate what varies
 * open for extension closed for modification
-* code to interface not implementation 
-* inheritance over decomposition
-* 
+* program to interface not implementation 
+* favor composition over inheritance
+* Principle of the Least Knowledge: talk only to your immediate friends. (same as Law of demeter)
+* Talk only to your friends
 
 Design Patterns:
 
@@ -13,7 +15,7 @@ Creational patterns:
 2. Factory
 3. Abstract Factory
 4. Prototype
-5.  Builder pattern
+5. Builder pattern
 
 Structural Patterns:
 organizing and composing classes and objects to form larger structures
@@ -26,7 +28,12 @@ organizing and composing classes and objects to form larger structures
 2. Composite pattern - 8
 3. Adapter Pattern - 7
    * pattern act as a bridge between two incompatible interface
+   * Allows incompatible interfaces to work together
 4. Facade Pattern - 9
+   * Make an interface simpler for use/ complex interfaces of one/more classes, they are easier to use
+   * provide a unified interface to a set interfaces of subsystem. defines the higher level interfaces, that makes the subsystem to easier to use 
+   * can implement more than one facade for subsystem
+   * 
 5. Proxy Design Pattern
 6. Bridge Design Pattern - 12
 7. Flyweight Design Pattern - 11
@@ -46,3 +53,12 @@ Behavioural Patterns:
 11. Null object
 
 — VISITOR pattern -> 19
+
+note:
+An adapter wraps an object
+to change its interface, a
+decorator wraps an object
+to add new behaviors and
+responsibilities, and a facade
+“wraps” a set of objects to
+simplify.
