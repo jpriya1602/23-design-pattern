@@ -25,7 +25,8 @@ organizing and composing classes and objects to form larger structures
     * decorators have same supertype as object they decorate
     * The decorator adds its own behavior before and/or after delegating to the object it
       decorates to do the rest of the job.
-2. Composite pattern - 8
+2. Composite pattern - 8:
+    * 
 3. Adapter Pattern - 7
    * pattern act as a bridge between two incompatible interface
    * Allows incompatible interfaces to work together
@@ -33,10 +34,38 @@ organizing and composing classes and objects to form larger structures
    * Make an interface simpler for use/ complex interfaces of one/more classes, they are easier to use
    * provide a unified interface to a set interfaces of subsystem. defines the higher level interfaces, that makes the subsystem to easier to use 
    * can implement more than one facade for subsystem
-   * 
-5. Proxy Design Pattern
+   
+5. Proxy Design Pattern:
+   * Subject interface(defines operation needs to be implemented),
+   * real subject(actual object referred by proxy),
+   * proxy (delegates the request to real subject, performs additional operation like logging, caching,access control)
+* **Types**:
+   * virtual proxy - supports lazy initialization
+   * protection proxy - Controls access to the real subject based on permissions and can prevent unauthorized access.
+   * remote proxy - provide a local representative for the objects in the remote space
+   * smart proxy - additional functionality like monitoring, logging before delegating the request to the real proxy
+   *  ODM (Object Data Mapper)
+   
 6. Bridge Design Pattern - 12
-7. Flyweight Design Pattern - 11
+   * Decouple an abstraction from its implementation 
+7. Flyweight Design Pattern - 11 (memory limited keyword)
+    * used to manage the object that shares the similar or identical states
+      separate intrinsic state (shared among multiple objects) from the extrinsic state(unique to each object)
+      intrinsic -> constant data stored within in object, not changeable by the external entities, consistent across 
+      different entities  
+      extrinsic -> variable data of an object, influenced or altered by the external factors, static is dynamic and 
+      vary between multiple objects
+   * when to use: 
+        large number of objects (with shared of intrinsic state)
+        memory optimization (reduce the memory, by sharing common state among multiple objects)
+        objects can be made immutable
+        performance - reducing the number of object creation, reducing the redundant data storage
+   * Flyweight class can be immutable
+   * 
+   * Game, Design word processor
+   * 
+        
+      
 
 Behavioural Patterns:
 
