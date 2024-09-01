@@ -10,7 +10,7 @@ Design Patterns:
 
 Creational patterns:
 -how to create objects
-- aim to encapsulate the object instantiation process
+-aim to encapsulate the object instantiation process
 1. Singleton
 2. Factory
 3. Abstract Factory
@@ -76,7 +76,11 @@ organizing and composing classes and objects to form larger structures
 Behavioural Patterns:
 
 1. Strategy Design pattern - 13
-2. 
+   Take what varies and encapsulate it, so it won't affect rest of the code, so that later you can
+   alter or extend the parts that vary without affecting those that don’t.
+   Identify the aspects of your application that vary and separate them from what stays the same.
+   The Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from
+   clients that use it.
 2. Observer - 17
 3. State design pattern -14
 4. Chain of responsibility - 20
