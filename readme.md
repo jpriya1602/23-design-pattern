@@ -48,6 +48,9 @@ organizing and composing classes and objects to form larger structures
    
 6. Bridge Design Pattern - 12
    * Decouple an abstraction from its implementation 
+   * Abstraction - high level control/interface that client interacts with (what operations needs to interacted with client)
+   * Implementor - defines underlying operation that supports Abstraction / focuses on how operations are performed. 
+   * The operations in the Abstraction will delegate work to the Implementor, which carries out the actual work.
 7. Flyweight Design Pattern - 11 (memory limited keyword)
     * used to manage the object that shares the similar or identical states
       separate intrinsic state (shared among multiple objects) from the extrinsic state(unique to each object)
