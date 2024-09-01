@@ -26,7 +26,10 @@ organizing and composing classes and objects to form larger structures
     * The decorator adds its own behavior before and/or after delegating to the object it
       decorates to do the rest of the job.
 2. Composite pattern - 8:
-    * 
+    * Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat
+      collections of objects and individual objects uniformly
+    * A Component is any object in a Composite structure. Components may be other composites or leaves.
+    * There are many design tradeoffs in implementing Composite. You need to balance transparency and safety with your needs.
 3. Adapter Pattern - 7
    * pattern act as a bridge between two incompatible interface
    * Allows incompatible interfaces to work together
@@ -73,6 +76,7 @@ organizing and composing classes and objects to form larger structures
 Behavioural Patterns:
 
 1. Strategy Design pattern - 13
+2. 
 2. Observer - 17
 3. State design pattern -14
 4. Chain of responsibility - 20
