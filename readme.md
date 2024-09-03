@@ -5,6 +5,7 @@ OO PRINCIPLES:
 * favor composition over inheritance
 * Principle of the Least Knowledge: talk only to your immediate friends. (same as Law of demeter)
 * Talk only to your friends
+* strive for loose coupled design between the objects that interact
 
 Design Patterns:
 
@@ -81,7 +82,19 @@ Behavioural Patterns:
    Identify the aspects of your application that vary and separate them from what stays the same.
    The Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from
    clients that use it.
+         has-a
+   client --> IBehaviour 
+                  | is-a
+                concrete Behaviour
 2. Observer - 17
+    publishers + subscriber = observer pattern
+    publishers -> subject
+    subscriber -> observers
+    defines one-to-many relationship between set of the objects, when state of one object changes, all of its dependents
+    are notified and updated automatically.
+    observers are dependent on the subject
+3. 
+    
 3. State design pattern -14
 4. Chain of responsibility - 20
 5. Command design pattern - 15
