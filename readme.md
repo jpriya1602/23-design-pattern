@@ -93,9 +93,20 @@ Behavioural Patterns:
     defines one-to-many relationship between set of the objects, when state of one object changes, all of its dependents
     are notified and updated automatically.
     observers are dependent on the subject
-3. 
-    
 3. State design pattern -14
+    problem involves State, actions and transition between the states because of actions
+    - allows an object to alter its behaviour when its internal state changes. The object will appear to change its class.
+    State interface:
+      - handle (mostly the actions in the problem)
+      will have concrete states
+    - Context - is a class can have number of internal states.
+      - have request() -> will delegate the call to state.handle()
+      - State Pattern allows an object to have many different behaviors that are based on its internal state.
+      - Each state as a full-blown object
+      - context get its behaviour by delegating to the current state object is composed with
+      - state and strategy have same class diagram, but differ in its intent
+      - greater number of classes
+      - state classes can be shared among context instances 
 4. Chain of responsibility - 20
 5. Command design pattern - 15
 6. Template -16
