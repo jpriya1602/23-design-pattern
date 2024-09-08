@@ -108,6 +108,13 @@ Behavioural Patterns:
       - greater number of classes
       - state classes can be shared among context instances 
 4. Chain of responsibility - 20
+    - want to give more than one object a chance to handle a request.
+    - Decouples the sender of the receiver and its receiver
+    - Each object in the chain acts as a handler and has a successor object. If it can handle the request,
+      it does; otherwise, it forwards the request to its successor.
+    - Handler 
+        |
+    concrete handler()
 5. Command design pattern - 15
 6. Template -16
 7. Memonto  - 23
