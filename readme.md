@@ -112,10 +112,14 @@ Behavioural Patterns:
     - Decouples the sender of the receiver and its receiver
     - Each object in the chain acts as a handler and has a successor object. If it can handle the request,
       it does; otherwise, it forwards the request to its successor.
-    - Handler 
+    - Handler ( abstract class, handle request method )
         |
     concrete handler()
 5. Command design pattern - 15
+            1.*
+    Invoker (setCommand) --> ICommand(execute, unexecute)
+                    |
+    receiver(action)  <-- Concrete Command(execute, unexecute)
 6. Template -16
 7. Memonto  - 23
 8. Interpreter - 21
