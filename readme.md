@@ -120,12 +120,21 @@ Behavioural Patterns:
     Invoker (setCommand) --> ICommand(execute, unexecute)
                     |
     receiver(action)  <-- Concrete Command(execute, unexecute)
-6. Template -16
+6. Template - 16
+    template method defines the steps of an algorithm and allows subclasses to provide the implementation for one or more steps.
+    Template method defines the skeleton of an algorithm in a method, deferring some steps to subclasses. Template Method lets subclasses redefine
+   certain steps of an algorithm without changing the algorithm’s structure.
+    Abstract class - defines the template method, abstract versions of the operations used in the template method
+    There may be many ConcreteClasses, each implementing the full set of operations required by the template method.
+    hook - method that is declared in the abstract class, but only given an empty or default implementation. subclass 
+    can override the hook ifs it wants to/ or not
+    use hooks when part of the algorithm is optional
+    - here inheritance is favored here. we are sure, we do not have invariant algorithm 
 7. Memonto  - 23
 8. Interpreter - 21
 9. Mediator with online auction - 22
 10. Iterator -18
-11. Null object
+11. Null object --> command pattern, we have used NO-COMMAND
 
 — VISITOR pattern -> 19
 
