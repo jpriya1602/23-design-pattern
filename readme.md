@@ -130,7 +130,17 @@ Behavioural Patterns:
     can override the hook ifs it wants to/ or not
     use hooks when part of the algorithm is optional
     - here inheritance is favored here. we are sure, we do not have invariant algorithm 
-7. Memonto  - 23
+7. Momento  - 23
+   Memento is a behavioral design pattern that lets you save and restore the previous state of an object without 
+   revealing the details of its implementation.
+    
+    1. originator - create a snapshot of its own state and restore the state from the snapshot
+    2. memento - value object that act as snapshot of the originator state
+    3. caretaker - knows not only “when” and “why” to capture the originator’s state, but also when the state should be restored.
+                   can keep track of the originator’s history by storing a stack of mementos.
+                   When originator has to travel back in history, the caretaker fetches the topmost memento from the stack
+                   and passes it to the originator’s restoration method.
+   4. you want to produce snapshots of the object’s state to be able to restore a previous state of the object.
 8. Interpreter - 21
 9. Mediator with online auction - 22
 10. Iterator -18
