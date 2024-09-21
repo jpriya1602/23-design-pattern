@@ -1,6 +1,6 @@
 package Structural.Adaptor;
 
-public class PaymentGatewayAdapter extends OldPaymentGateway {
+public class PaymentGatewayAdapter extends OldPaymentGateway { // OldPaymentGateway is the target interface that client expects
     NewPaymentGateway newPaymentGateway;
     String currency;
 

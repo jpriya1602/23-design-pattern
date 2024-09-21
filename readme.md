@@ -34,6 +34,11 @@ organizing and composing classes and objects to form larger structures
 3. Adapter Pattern - 7
    * pattern act as a bridge between two incompatible interface
    * Allows incompatible interfaces to work together
+     Key Concepts of Adapter Pattern
+     Target Interface: The interface that the client expects. The adapter will implement this interface.
+     Adaptee: The existing class or component that needs to be adapted to the new interface.
+     Adapter: The class that implements the target interface and internally uses an instance of the adaptee class to fulfill the requests.
+     Client: The class that interacts with the target interface. 
 4. Facade Pattern - 9
    * Make an interface simpler for use/ complex interfaces of one/more classes, they are easier to use
    * provide a unified interface to a set interfaces of subsystem. defines the higher level interfaces, that makes the subsystem to easier to use 
@@ -142,6 +147,29 @@ Behavioural Patterns:
                    and passes it to the originator’s restoration method.
    4. you want to produce snapshots of the object’s state to be able to restore a previous state of the object.
 8. Interpreter - 21
+   provides a mechanism to interpret and evaluate language expressions by defining a grammar and an interpreter.
+    - define a grammar for a simple language
+    - represents language as classes and use recursive algorithm to evaluate expression.
+    - _Context_ 
+      - contains the global information that is passed to the interpreter
+    - _AbstractExpression_ 
+      - defines an abstract interface for langauge expressions
+      - declares an interpret() method that defines the interpretation logic for the expressions
+    - _TerminalExpression_ 
+      - classes represent the elementary building blocks of the language
+      - implement the abstract expression interface and provide the interpretation logic for the terminal expressions.
+    - _NonTerminalExpression_
+      - classes represent the complex expressions that may contain subexpressions
+      - implement the abstract expression interface and provide the interpretation logic for the composite expressions
+    - ![Screenshot 2024-09-21 at 9.44.16 PM.png](..%2F..%2F..%2FDesktop%2FScreenshot%202024-09-21%20at%209.44.16%E2%80%AFPM.png)
+    - Advantages:
+      - Easy to change and extend the grammar
+      - Implementing the grammar is easy
+      - Adding new ways to interpret expressions is easy
+      - Disadvantages:
+      - Complex grammars are hard to maintain
+      - Performance may be a critical issue
+      - The grammar might be too complex to implement using the interpreter pattern
 9. Mediator with online auction - 22
 10. Iterator -18
 11. Null object --> command pattern, we have used NO-COMMAND
@@ -156,3 +184,10 @@ to add new behaviors and
 responsibilities, and a facade
 “wraps” a set of objects to
 simplify.
+
+References:
+https://medium.com/@rajeshvelmani/understanding-language-interpretation-with-the-interpreter-design-pattern-in-java-b2a3969eaf9
+https://refactoring.guru/design-patterns
+https://medium.com/@vino7tech/design-pattern-in-java-14289cc56f5b
+Head First design patterns book
+
