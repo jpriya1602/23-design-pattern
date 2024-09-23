@@ -171,6 +171,13 @@ Behavioural Patterns:
       - Performance may be a critical issue
       - The grammar might be too complex to implement using the interpreter pattern
 9. Mediator with online auction - 22
+    - to centralize the complex communications and control between the objects
+    - pattern restricts direct communications between the objects and forces them to collaborate only via a mediator object.
+    - defines an object that encapsulates how a set of other objects interact with one another
+    - mediator(notify sender)
+          |
+    - concrete mediator(keep references to all component it manages) --> Components(expects mediator and do some operation)
+          
 10. Iterator -18
 11. Null object --> command pattern, we have used NO-COMMAND
 
