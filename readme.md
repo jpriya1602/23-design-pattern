@@ -179,6 +179,12 @@ Behavioural Patterns:
     - concrete mediator(keep references to all component it manages) --> Components(expects mediator and do some operation)
           
 10. Iterator -18
+    extracts the traversal behavior of a collection into a separate object called an iterator.
+    - provides a way to traverse the elements of collection sequentially without exposing its underlying representation.
+    - encapsulates all the traversal details
+      -   Iterable                 Iterator
+ getInterator() |                     |   bool hasNext(), void next(), current()
+-   ConcreteIterable             Concrete Iterator
 11. Null object --> command pattern, we have used NO-COMMAND
 
 — VISITOR pattern -> 19
